@@ -1,0 +1,98 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/elfefe/Projets/StudioProjects/ExInterface/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/home/elfefe/Projets/StudioProjects/ExInterface/app/src/main/res/values-hdpi/colors.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,55,102",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "194,97,148"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,101,148",
+                        "endColumns": "45,46,50",
+                        "endOffsets": "96,143,194"
+                    }
+                },
+                {
+                    "source": "/home/elfefe/Projets/StudioProjects/ExInterface/app/src/main/res/values-hdpi/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "54",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "368"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "455",
+                        "endLines": "15",
+                        "endColumns": "12",
+                        "endOffsets": "769"
+                    }
+                },
+                {
+                    "source": "/home/elfefe/Projets/StudioProjects/ExInterface/app/src/main/res/values-hdpi/dimen.xml",
+                    "from": {
+                        "startLines": "6,10,12,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "84,152,204,41",
+                        "endColumns": "45,50,67,41",
+                        "endOffsets": "125,198,267,78"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "199,245,296,364",
+                        "endColumns": "45,50,67,41",
+                        "endOffsets": "240,291,359,401"
+                    }
+                },
+                {
+                    "source": "/root/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/80c4b6cab155bb4953825aa54f18212c/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "16",
+                        "startColumns": "4",
+                        "startOffsets": "774",
+                        "endLines": "20",
+                        "endColumns": "13",
+                        "endOffsets": "1046"
+                    }
+                },
+                {
+                    "source": "/home/elfefe/Projets/StudioProjects/ExInterface/app/src/main/res/values-hdpi/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "48",
+                        "endOffsets": "60"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "406",
+                        "endColumns": "48",
+                        "endOffsets": "450"
+                    }
+                }
+            ]
+        }
+    ]
+}
