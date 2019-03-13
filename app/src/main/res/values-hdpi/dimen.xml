@@ -6,6 +6,9 @@
 
     <dimen name="padding_title">40dip</dimen>
 
+    <dimen name="padding_title_land">10dip</dimen>
+
+
     <!-- Images -->
 
     <dimen name="size_image_height">150dip</dimen>
