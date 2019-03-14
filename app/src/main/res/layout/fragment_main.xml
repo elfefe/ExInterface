@@ -1,26 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_layout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainFragment">
-
-        <include
-            layout="@layout/toolbar"
-
+    android:orientation="vertical">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/main_button_up"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="UP"
+            android:textSize="@dimen/size_title"
+            android:padding="@dimen/padding_title"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:tag="10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/main_button_mid"/>
+        <Button
+            android:id="@+id/main_button_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MIDDLE"
+            android:textSize="@dimen/size_title"
+            android:padding="@dimen/padding_title"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:tag="20"
+            app:layout_constraintTop_toBottomOf="@+id/main_button_up"
+            app:layout_constraintBottom_toTopOf="@+id/main_button_down"/>
+        <Button
+            android:id="@+id/main_button_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="DOWN"
+            android:textSize="@dimen/size_title"
+            android:padding="@dimen/padding_title"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:tag="30"
+            app:layout_constraintTop_toBottomOf="@+id/main_button_mid"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-            <Button
-
-                android:id="@+id/main_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="OpenClassrooms, c'est vraiment le top du top !"
-                android:textSize="@dimen/size_title"
-                android:padding="@dimen/padding_title"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"/>
-
+    </android.support.constraint.ConstraintLayout>
 </FrameLayout>
