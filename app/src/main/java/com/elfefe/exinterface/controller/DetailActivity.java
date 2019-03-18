@@ -1,17 +1,20 @@
 package com.elfefe.exinterface.controller;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.elfefe.exinterface.R;
-import com.elfefe.exinterface.fragment.DetailFragment;
+import com.elfefe.exinterface.controller.fragment.DetailFragment;
+import com.elfefe.exinterface.controller.fragment.MainFragment;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity implements DetailFragment.OnButtonClickedListener {
 
     public static final String EXTRA_BUTTON_TAG = "extra_button_tag";
     private DetailFragment detailFragment;
@@ -78,5 +81,11 @@ public class DetailActivity extends AppCompatActivity {
     void updateDetailFragmentTextViewWithIntentTag(){
         int buttonTag = getIntent().getIntExtra(EXTRA_BUTTON_TAG, 0);
         detailFragment.updateTextView(buttonTag);
+    }
+
+    @Override
+    public void onButtonClicked(View v) {
+        Intent intent = new Intent(this, PageActivity.class);
+        startActivity(intent);
     }
 }

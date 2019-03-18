@@ -35,6 +35,7 @@
                 android:value=".controller.MainActivity" />
 
         </activity>
+        <activity android:name=".controller.PageActivity" />
     </application>
 
 

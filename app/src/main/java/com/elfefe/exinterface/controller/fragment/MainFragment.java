@@ -1,4 +1,4 @@
-package com.elfefe.exinterface.fragment;
+package com.elfefe.exinterface.controller.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
