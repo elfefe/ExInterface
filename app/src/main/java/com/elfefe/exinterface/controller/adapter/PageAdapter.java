@@ -10,7 +10,7 @@ public class PageAdapter extends FragmentPagerAdapter {
 
     private final int[] colors;
 
-    public PageAdapter(FragmentManager fm, int[] colors) {
+    protected PageAdapter(FragmentManager fm, int[] colors) {
         super(fm);
         this.colors = colors;
     }
@@ -23,5 +23,10 @@ public class PageAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return 5;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return "Page "+position;
     }
 }

@@ -36,8 +36,8 @@ public class PageFragment extends Fragment {
 
         View result = inflater.inflate(R.layout.fragment_page, container, false);
 
-        @SuppressLint("CutPasteId") ConstraintLayout rootView = (ConstraintLayout) result.findViewById(R.id.fragment_page_rootview);
-        @SuppressLint("CutPasteId") TextView textView= (TextView) result.findViewById(R.id.fragment_page_title);
+        ConstraintLayout rootView = (ConstraintLayout) result.findViewById(R.id.fragment_page_rootview);
+        TextView textView= (TextView) result.findViewById(R.id.fragment_page_title);
 
         int position = 0;
         int color = 0;
